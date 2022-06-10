@@ -12,4 +12,14 @@ func main(){
 	}
 	fmt.Printf("Factorial = %d", fact)
 
+	fmt.Println("\nFactorial by recursion =" ,(factorial(num)))
+
+}
+
+func factorial(n int)int{
+	if n == 1{
+		return 1
+	} 
+	return n*factorial(n-1)
+
 }
